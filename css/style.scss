@@ -1,0 +1,440 @@
+body {
+	font-family: 'Outfit';
+	font-size: 20px;
+	margin:0;
+	padding:0;
+}
+
+$background-color-default: #e41129;
+$text-color-default : #001c3a;
+
+/* NOTIFICATIONS BEFORE NAVBAR */
+.notification {
+	width: 100%; 
+	padding: 20px;
+	background: $background-color-default;
+	margin: auto;
+	padding:50 px 50px;
+	color: white;
+    
+    .notification-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .notification-text a {
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+/* NAV BAR AND LOGO ENTERPRISE STYLES*/
+.navbar {
+
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+	gap: 1rem;
+	padding: 20px;
+	margin-left: 10%;
+
+    .logo-Navbar {
+        display: block;
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        margin-left: 10%;
+    }
+    .menu {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
+        gap:20px;	
+        background: white;
+        text-align: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        position: relative;
+        top:-10px;
+    }
+    
+    .menu ul li{
+        margin-left: 35px;
+        color: $background-color-default;
+    }
+    
+    .menu ul li a{
+        color: $background-color-default;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .menu ul li a:hover{
+       
+        font-size: 23px;
+       
+    }
+}
+
+/* BANNER GENERATE WITH SWIPPER */
+.banner { 
+	width: 97%;
+	height: 900px;
+	background: $background-color-default;
+
+    /* SWIPPER SLIDER */
+    swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+}
+
+/* PARAGRAPH SECTION CONTENT */
+.grid-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+
+    .container {
+        width: 70%;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
+        gap:100px;
+    }
+    
+    .card {
+        height: 520px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    .card-img {
+        border-radius: 8px;
+        display: block;
+        height: 300px;
+        background: $background-color-default;
+    }
+    .text-card {
+        border-radius: 8px;
+        color: $text-color-default;
+        height: 300px;
+        text-align: left;
+    }
+    
+    .card-image {
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-image-over 
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: -300px;
+        color: rgb(250, 243, 243);
+    }
+     .card-title{
+         font-weight: 900;
+     }
+    
+     .card-paragraph{
+         font-size: 13px;
+     }
+}
+
+
+.parent-content {
+	display: block;
+	width: 100%;
+	display: block;
+	position: relative;
+	top:150px;
+    
+	background: $background-color-default; 
+	height: 150vh;
+	gap: 2px;
+
+    .image-over-div {
+        width: 40%;
+        height: 700px;
+        display: block;
+        position: relative;
+        left: 30%;
+        top: -100px;
+        background-image: url('../../asset/images/paragraph/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png');
+        background-size: 100% 100%;
+    }
+    .image-over-div-text {
+        display: grid;
+        text-align: center;
+        background: $text-color-default;
+        position:relative;
+        top:390px;
+        font-size: 30px;
+        color: white;
+        width: 100%;
+        opacity: .5;
+    }
+
+    .brands-title {
+        color: #fff;
+        text-align: center;
+    }
+
+    .grid-container-brands {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-gap: 10px;
+        padding: 7px;
+        padding:50 px 50px;
+        background: $background-color-default;
+        justify-content: center;
+    }
+
+    .grid-container-brands > div {
+        background: rgb(211, 40, 40);
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .client-card-image {
+        display: block;
+        width: 60%;
+        margin-top: 50px;
+        position: relative;
+        left: 45px;
+        transition: width 2s;
+    }
+
+    .client-card-image:hover {
+        width: 500px;
+      }
+}
+
+/* CONTACT FORM STYLES */
+
+.form-parent-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+	grid-gap: 10px;
+	background: $background-color-default;
+	margin-top: 140px;
+
+    .content-contact-form {
+        display: block;
+        width: 100%;
+        background:  $background-color-default;
+        height: 90vh;
+        padding-left: 10%;
+        padding-top: 5%;
+        text-align: justify;
+    
+    }
+    
+    .form-paragraph {
+    
+        color: white;
+        width: 82.5%;
+        font-size: 12px;
+    }
+    
+    .conditions-patragraph {
+        display: block;
+        color: white;
+        width: 25%;
+        font-size: 10px;
+        margin-top: 80px;
+        float: left;
+    }
+    
+    .form-title {
+        display: block;
+        width: 100%;
+        color: white;
+        text-align: left;
+    }
+    
+    .form-title-left {
+        display: block;
+        margin-top: 15%;
+        width: 100%;
+        color: white;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .form-control {
+        padding: 10px;
+        width: 40%;
+        border-radius: 5px;
+        border: none;
+        padding-top: 1px;
+        color:  $background-color-default;
+    }
+    
+    .form-control-left {
+        display: block;
+        padding: 10px;
+        width: 50%;
+        border-radius: 5px;
+        margin-top: 20px;
+        color:  white;
+        background: $background-color-default;
+        border-color: white;
+    }
+    .form-control-text-area {
+        padding: 10px;
+        width: 82.5%;
+        border-radius: 5px;
+        border: none;
+        margin-top: 7px;
+        color:  $background-color-default;
+        height: 100px;
+    }
+    
+    .form-control-check{
+        width: 30px;
+        padding: 10px;
+        color:  $background-color-default;
+        height: 30px;
+        display: block;
+        float: left;
+        border-radius: 10px;
+        border: none;
+        
+    }
+    
+    .send-message {
+        background: #f8cc18;
+        color: $background-color-default;
+        border-radius: 20px;
+        width: 40%;
+        padding: 5px;
+        border: none;
+        float: left;
+        margin-top: 80px;
+        margin-left: 35px;
+    }
+    
+    .form-control-radio {
+        width: 40px;
+        padding: 10px;
+        color:  $background-color-default;
+        height: 20px;
+        display: block;
+         float: left;
+         margin-top: 5px;
+    
+    }
+}
+
+/* NAV BAR PUBLISHED BEFORE FOOTER */
+.published {
+	width: 100%;
+
+    .published-paragraph {
+        color :$background-color-default;
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+.footer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+	gap: 1rem;
+	
+	width: 100%;
+	background: $text-color-default;
+
+    .grid-payment {
+        display: flex;
+        padding-left: 30px;
+    }
+    
+    .payment-image {
+    
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+    }
+    
+    .section-footer h6 {
+        padding-left: 8%;
+        color :$background-color-default;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+    .section-footer ul {
+        list-style: none;
+    }
+    
+    .section-footer ul li {
+        color :$background-color-default;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    
+    .payment-title {
+        color: white;
+        font-weight: 100;
+        padding-left: 40px;
+    }
+    
+    .redes-title {
+        color: $background-color-default;
+        font-weight: 100;
+        padding-left: 40px;
+    }
+    
+    .enterprise-image {
+        display: block;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        float: right;
+        padding: 10px;
+    }
+}
+
+/* FOOTER SMARTPHONE */
+@media only screen and (max-width: 600px) {
+    .footer {height: 150vh;}
+}
+/* FOOTER DESKTOP*/
+@media only screen and (min-width: 600px) {
+    .footer {height: 30vh;}
+}
+
