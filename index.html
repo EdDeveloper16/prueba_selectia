@@ -1,281 +1,332 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--fonts googleapis outfit from cdn-->
-	<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
-	<!--library swipper from cdn-->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-	<!-- local css file styles -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- local javascript file -->
-	<script src="js/index.js"></script>
-	<title>Prueba</title>
-</head>
-<body>
-	<!-- notification navbar -->
-	<div class="notification">
-		<div class="notification-text">
-			MÁS PUBLICIDAD! <b>SUBSCRÍBETE A NUESTRA NEWSLETTER </b>
-			<a href="#" >Clic aquí</a>
-		</div>
-	</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fonts googleapis outfit from cdn-->
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <!--library swipper from cdn
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>-->
+    <!-- local css file styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- local javascript file -->
+    <script src="js/index.js"></script>
+s
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Prueba</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="published-nav">MÁS PUBLICIDAD! <b>SUBSCRÍBETE A NUESTRA NEWSLETTER </b>
+        <a href="#">Clic aquí</a>
+      </div>
+      <nav>
+        <div id="logo">
+          <img src="logos/Recurso13.svg">
+        </div>
+        <div id="menu">
+          <ul id="list">
+            <li id="opt1" class="opts">
+              <a href="#">Nosotros</a>
+            </li>
+            <li id="opt2" class="opts">
+              <a href="#">Servicios</a>
+            </li>
+            <li id="opt3" class="opts">
+              <a href="#">Proyectos</a>
+            </li>
+            <li id="opt4" class="opts">
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="banner">
+        <section class="services section" id="services">
+          <div class="services-info container_services swiper-container">
+            <div class="swiper-wrapper">
+              <div class="services_content grid-services swiper-slide">
+                <img src="portada/image_001.WEBP" class="services-img">
+              </div>
+              <div class="services_content grid-services swiper-slide">
+                <img src="portada/image_002.WEBP" class="services-img">
+                
+              </div>
+              <div class="services_content grid-services swiper-slide">
+                <img src="portada/image_003.WEBP" class="services-img">
+               
+              </div>
+              <div class="services_content grid-services swiper-slide">
+                <img src="portada/image_004.WEBP" class="services-img">
+               
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
 
-	<!-- menu navbar -->
-	<div class="navbar">
-		<div class="logo-Navbar">
-			<img src="logos/Recurso13.svg">
-		</div>
-		<div>
-			<nav class="menu">
-				<ul>
-					<li><a href="#">Nosotros</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Proyectos</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>	
-		<!--
-		
-		
-		-->
-	</div>
-
-	<!-- banner implementado con swipper -->
-	<div class="banner">
-		<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" loop="true" centered-slides="true" autoplay-delay="1500" autoplay-disable-on-interaction="true">
-			<swiper-slide><img src="portada/image_001.WEBP" /></swiper-slide>
-			<swiper-slide><img src="portada/image_002.WEBP" /></swiper-slide>
-			<swiper-slide><img src="portada/image_003.WEBP" /></swiper-slide>
-			<swiper-slide><img src="portada/image_004.WEBP" /></swiper-slide>
-		</swiper-container>
-	</div>
-
-	<!-- seccion de cards e imagenes -->
-	<div class="grid-container">
-		<div class="container">
-			<div class="card">
-				<div class="card-img">
-					<img src="paragraph/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg" class="card-image">
-					<img src="paragraph/salud-mental.svg" class="card-image-over">
-				</div>
-				<div class="text-card">
-					<h2 class="card-title">
-						CREATIVIDAD SIN LÍMITES PARA IMPULSAR TU MARCA
-					</h2>
-					<p class="card-paragraph">
-						Transformamos ideas en <b>experiencias inolvidables</b>, creando campañas que capturan la esencia de tu marca y resuenan profundamente con tu audiencia.
-					</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-img">
-					<img src="paragraph/3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg" class="card-image">
-					<img src="paragraph/esperma.svg" class="card-image-over">
-				</div>
-				<div class="text-card">
-					<h2>
-						AGILIDAD Y EFICIENCIA EN CADA PROYECTO
-					</h2>
-					<p class="card-paragraph">
-						<b>Respuesta rápida y eficiente</b> para un mercado en constante cambio, adaptándonos a tus necesidades y superando tus expectativas con cada entrega.
-					</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-img">
-					<img src="paragraph/isolated-beautiful-cyber-woman-against-abstract-background.jpg"  class="card-image">
-					<img src="paragraph/chincheta.svg" class="card-image-over">
-				</div>
-				<div class="text-card">
-					<h2>
-						TECNOLOGÍA PARA RESULTADOS ÓPTIMOS
-					</h2>
-					<p class="card-paragraph"> 
-						Innovación tecnológica para potenciar tus campañas publicitarias, utilizando <b>las herramientas más avanzadas</b> para alcanzar y superar tus objetivos.
-					</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-img">
-					<img src="paragraph/powerful-partnership-handshake-symbolizing-collaboration-trust-success-highlighted-with.jpg" class="card-image">
-					<img src="paragraph/jarro-de-cerveza.svg" class="card-image-over">
-				</div>
-				<div class="text-card">
-					<h2 class="card-title">
-						EQUIPO DE EXPERTOS APASIONADOS Y DEDICADOS
-					</h2>
-					<p class="card-paragraph">
-						Profesionales apasionados dedicados a impulsar tu marca, combinando talento y experiencia para ofrecer <b>resultados excepcionales y transformar 0tu visión en realidad</b>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- banner estatico -->
-	<div class="parent-content">
-		<div class="image-over-div">
-			<div class="image-over-div-text">
-				VENDEMOS HUMO CON MUCHA PASIÓN
-			</div>
-		</div>
-		<div class="brands-title">
-			<h2>NUESTROS CLIENTES</h2>
-		</div>
-		<div class="grid-container-brands" id="brands">
-			<div class="item-img">
-				<img src="logos/recurso8.svg"  class="client-card-image">
-			</div>
-			<div class="item-img">
-				<img src="logos/recurso7.svg"  class="client-card-image">
-			</div>
-			<div class="item-img">
-				<img src="logos/recurso11.svg"  class="client-card-image">
-			</div>  
-			<div class="item-img">
-				<img src="logos/recurso9.svg"  class="client-card-image">
-			</div>
-			<div class="item-img">
-				<img src="logos/recurso10.svg"  class="client-card-image">
-			</div>
-			<div class="item-img">
-				<img src="logos/recurso12.svg"  class="client-card-image">
-			</div>
-			<div class="item7">
-				<img src="logos/recurso6.svg"  class="client-card-image">
-			</div>
-			<div class="item8">
-				<img src="logos/recurso3.svg"  class="client-card-image">
-			</div>
-			<div class="item-img">
-				<img src="logos/recurso1.svg"  class="client-card-image">
-			</div>
-
-			<div class="item-img">
-				<img src="logos/recurso5.svg"  class="client-card-image">
-			</div>
-
-			<div class="item-img">
-				<img src="logos/recurso2.svg"  class="client-card-image">
-			</div>
-
-			<div class="item-img">
-				<img src="logos/recurso4.svg"  class="client-card-image">
-			</div>
-		</div>			
-	</div>
-	<hr>
-	<!-- formulario de contacto -->
-	<!--<form class="form ">-->
-	<div class="form-parent-content">
-			
-			<div class="content-contact-form">
-				<h2 class="form-title">ENVIANOS TU MENSAJE</h2>
-				<div class="form-group">
-					<input type="text" class="form-control" value="Nombre">
-					<input type="email" class="form-control" value="Email">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" value="Teléfono">
-					<input type="text" class="form-control" value="Planeta de nacimeinto">
-				</div>
-				<div class="form-group">
-					<textarea class="form-control-text-area">Mensaje</textarea>
-				</div>
-				<p class="form-paragraph">Sus datos serán tratados por IMPACTA para la atención de las consultas o solicitudes de información realizadas. 
-				Puede ejercer sus derechos conforme a lo dispuesto en la Política de Privacidad. Más información aquí</p>
-			</div>
-			<div class="content-contact-form">
-				<h2 class="form-title-left">SELECCIONA SOLO <b>UN RESULTADO</b></h2>
-				<div class="form-group">
-					<input type="radio" class="form-control-radio" >
-					<input type="email" class="form-control-left" value="Quiero ser feliz" disabled>
-				</div>
-				<div class="form-group">
-					<input type="radio" class="form-control-radio" >
-					<input type="text" class="form-control-left" value="Quiero ser rico" disabled>
-				</div>
-				<div class="form-group">
-					<input type="radio" class="form-control-radio" >
-					<input type="text" class="form-control-left" value="Quiero ser un avión" disabled>
-				</div>
-				<div class="form-group">
-					<input type="radio" class="form-control-radio">
-					<input type="text" class="form-control-left" value="Quiero dormir todo el día" disabled>
-				</div>
-				<p class="conditions-patragraph"><input type="checkbox" class="form-control-check" > He leído y acepto el aviso legal
-				y la política de privacidad </p> 
-				<button class="send-message" id="message" onclick="message()">ENVIAR MENSAJE</button>
-			</div>
-		</div>
-	<!--</form>-->
-	<!-- navbar de publicidad -->
-	<div class="published">
-		<h5 class="published-paragraph">
-			MÁS PUBLICIDAD! <b>SUBSCRÍBETE A NUESTRA NEWSLETTER </b> Clic aqui
-		</h5>
-	</div>
-	<!-- footer -->
-	<div class="footer">
-		<div class="section-footer">
-			<h6>Contacto y Preguntas Frecuentes</h6>
-			<ul>
-				<li>+ (34) 666 666 666</li>
-				<li>FORMULARIO DE <b>CONTACTO</b></li>
-				<li><b>PREGUNTAS</b> FRECUENTES</li>
-				<li>LIBRO DE RECLAMACIONES</li>
-				<li>CONOCE NUESTRA MANERA DE <b>TRABAJAR</b></li>
-			</ul>
-			<div>
-				<h5 class="payment-title">Pago seguro</h5>
-				<div class="grid-payment">
-					<div class="payment-image"><a href="#"><img src="logos/recurso20.svg"></a></div>
-					<div class="payment-image"><a href="#"><img src="logos/recurso17.svg"></a></div>
-					<div class="payment-image"><a href="#"><img src="logos/recurso19.svg"></a></div>
-					<div class="payment-image"><a href="#"><img src="logos/recurso18.svg"></a></div>
-				</div>
-			</div>
-		</div>
-		<div class="section-footer">
-			<h6>Nosotros</h6>
-			<ul>
-				<li>CATEGORÍAS</li>
-				<li>NOVEDADES</li>
-				<li>OFERTAS</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li>Servicio</li>
-			</ul>
-		</div>
-		<div class="section-footer">
-			<h6>Proyectos</h6>
-			<ul>
-				<li>CALIDADES</li>
-				<li>REVISIONES</li>
-				<li>RENOVACIÓN</li>
-				<li>VENTAS</li>
-			</ul>
-		</div>
-		<div class="section-footer">
-			<h6>Contacto</h6>
-			<ul>
-				<li>FORMULARIO DE CONTACTO</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li>Redes</li>
-			</ul>
-			<h5 class="redes-title">Redes</h5>
-				<div class="grid-payment">
-					<div class="payment-image"><a href="#"><img src="logos/recurso15.svg"></a></div>
-					<div class="payment-image"><a href="#"><img src="logos/recurso16.svg"></a></div>
-				</div>
-			<div class="enterprise-image"><img src="logos/recurso14.svg"></div>
-		</div>
-	</div>
-</body>
+     
+      <main>
+        <div class="card">
+          <img src="paragraph/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg" class="card-image">
+          <h2 class="card-title"> CREATIVIDAD SIN LÍMITES PARA IMPULSAR TU MARCA </h2>
+          <p class="card-paragraph"> Transformamos ideas en <b>experiencias inolvidables</b>, creando campañas que capturan la esencia de tu marca y resuenan profundamente con tu audiencia. </p>
+        </div>
+        <div class="card">
+          <img src="paragraph/3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg" class="card-image">
+          <h2 class="card-title"> AGILIDAD Y EFICIENCIA EN CADA PROYECTO </h2>
+          <p class="card-paragraph">
+            <b>Respuesta rápida y eficiente</b> para un mercado en constante cambio, adaptándonos a tus necesidades y superando tus expectativas con cada entrega.
+          </p>
+        </div>
+        <div class="card">
+          <img src="paragraph/isolated-beautiful-cyber-woman-against-abstract-background.jpg" class="card-image">
+          <h2 class="card-title"> TECNOLOGÍA PARA RESULTADOS ÓPTIMOS </h2>
+          <p class="card-paragraph"> Innovación tecnológica para potenciar tus campañas publicitarias, utilizando <b>las herramientas más avanzadas</b> para alcanzar y superar tus objetivos. </p>
+        </div>
+        <div class="card">
+          <img src="paragraph/powerful-partnership-handshake-symbolizing-collaboration-trust-success-highlighted-with.jpg" class="card-image">
+          <h2 class="card-title"> EQUIPO DE EXPERTOS APASIONADOS Y DEDICADOS </h2>
+          <p class="card-paragraph"> Profesionales apasionados dedicados a impulsar tu marca, combinando talento y experiencia para ofrecer <b>resultados excepcionales y transformar 0tu visión en realidad</b>
+          </p>
+        </div>
+      </main>
+      <div id="content1">
+        <div class="image-over-div">
+          <div class="image-over-div-text"> VENDEMOS HUMO CON MUCHA PASIÓN </div>
+        </div>
+      </div>
+      <div id="content2">
+        <div id="title-client">
+          <h2>NUESTROS CLIENTES</h2>
+        </div>
+        <div id="card1">
+          <div class="item-img">
+            <img src="logos/recurso8.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card2">
+          <div class="item-img">
+            <img src="logos/recurso7.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card3">
+          <div class="item-img">
+            <img src="logos/recurso11.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card4">
+          <div class="item-img">
+            <img src="logos/recurso9.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card5">
+          <div class="item-img">
+            <img src="logos/recurso10.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card6">
+          <div class="item-img">
+            <img src="logos/recurso12.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card7">
+          <div class="item7">
+            <img src="logos/recurso6.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card8">
+          <div class="item8">
+            <img src="logos/recurso3.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card9">
+          <div class="item-img">
+            <img src="logos/recurso1.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card10">
+          <div class="item-img">
+            <img src="logos/recurso5.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card11">
+          <div class="item-img">
+            <img src="logos/recurso2.svg" class="client-card-image">
+          </div>
+        </div>
+        <div id="card12">
+          <div class="item-img">
+            <img src="logos/recurso4.svg" class="client-card-image">
+          </div>
+        </div>
+      </div>
+      <div id="content3">
+        <div id="form-1">
+          <div class="content-contact-form">
+            <h2 class="form-title">ENVIANOS TU MENSAJE</h2>
+            <div class="form-group">
+              <input type="text" class="form-control" value="Nombre">
+              <input type="email" class="form-control" value="Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value="Teléfono">
+              <input type="text" class="form-control" value="Planeta de nacimeinto">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control-text-area">Mensaje</textarea>
+            </div>
+            <p class="form-paragraph">Sus datos serán tratados por IMPACTA para la atención de las consultas o solicitudes de información realizadas. Puede ejercer sus derechos conforme a lo dispuesto en la Política de Privacidad. Más información aquí</p>
+          </div>
+        </div>
+        <div id="form-2">
+          <div class="content-contact-form">
+            <h2 class="form-title-left">SELECCIONA SOLO <b>UN RESULTADO</b>
+            </h2>
+            <div class="form-group">
+              <input type="radio" class="form-control-radio">
+              <input type="email" class="form-control-left" value="Quiero ser feliz" disabled>
+            </div>
+            <div class="form-group">
+              <input type="radio" class="form-control-radio">
+              <input type="text" class="form-control-left" value="Quiero ser rico" disabled>
+            </div>
+            <div class="form-group">
+              <input type="radio" class="form-control-radio">
+              <input type="text" class="form-control-left" value="Quiero ser un avión" disabled>
+            </div>
+            <div class="form-group">
+              <input type="radio" class="form-control-radio">
+              <input type="text" class="form-control-left" value="Quiero dormir todo el día" disabled>
+            </div>
+            <p class="conditions-patragraph">
+              <input type="checkbox" class="form-control-check"> He leído y acepto el aviso legal y la política de privacidad
+            </p>
+            <button class="send-message" id="message" onclick="message()">ENVIAR MENSAJE</button>
+          </div>
+        </div>
+      </div>
+      <div id="published-footer">
+        <h5 class="published-paragraph"> MÁS PUBLICIDAD! <b>SUBSCRÍBETE A NUESTRA NEWSLETTER </b> Clic aqui </h5>
+      </div>
+      <footer>
+        <div id="footer-1">
+          <div class="section-footer">
+            <h6>Contacto y Preguntas Frecuentes</h6>
+            <ul>
+              <li>+ (34) 666 666 666</li>
+              <li>FORMULARIO DE <b>CONTACTO</b>
+              </li>
+              <li>
+                <b>PREGUNTAS</b> FRECUENTES
+              </li>
+              <li>LIBRO DE RECLAMACIONES</li>
+              <li>CONOCE NUESTRA MANERA DE <b>TRABAJAR</b>
+              </li>
+            </ul>
+            <div>
+              <h5 class="payment-title">Pago seguro</h5>
+              <div class="grid-payment">
+                <div class="payment-image">
+                  <a href="#">
+                    <img src="logos/recurso20.svg">
+                  </a>
+                </div>
+                <div class="payment-image">
+                  <a href="#">
+                    <img src="logos/recurso17.svg">
+                  </a>
+                </div>
+                <div class="payment-image">
+                  <a href="#">
+                    <img src="logos/recurso19.svg">
+                  </a>
+                </div>
+                <div class="payment-image">
+                  <a href="#">
+                    <img src="logos/recurso18.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer-2">
+          <div class="section-footer">
+            <h6>Nosotros</h6>
+            <ul>
+              <li>CATEGORÍAS</li>
+              <li>NOVEDADES</li>
+              <li>OFERTAS</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>Servicio</li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-3">
+          <div class="section-footer">
+            <h6>Proyectos</h6>
+            <ul>
+              <li>CALIDADES</li>
+              <li>REVISIONES</li>
+              <li>RENOVACIÓN</li>
+              <li>VENTAS</li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-4">
+          <div class="section-footer">
+            <h6>Contacto</h6>
+            <ul>
+              <li>FORMULARIO DE CONTACTO</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>Redes</li>
+            </ul>
+            <h5 class="redes-title">Redes</h5>
+            <div class="grid-payment">
+              <div class="payment-image">
+                <a href="#">
+                  <img src="logos/recurso15.svg">
+                </a>
+              </div>
+              <div class="payment-image">
+                <a href="#">
+                  <img src="logos/recurso16.svg">
+                </a>
+              </div>
+            </div>
+            <div class="enterprise-image">
+              <img src="logos/recurso14.svg">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var swiper = new Swiper(".services-info", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay:true,
+        loop:true
+      });
+    </script>
+  </body>
 </html>
