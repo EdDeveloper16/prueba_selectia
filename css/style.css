@@ -4,7 +4,7 @@ body {
 }
 
 #wrapper {
-  display: felx;
+  display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 4rem 4rem 50rem 85rem 70rem 30rem 30rem 4rem 25rem;
   grid-template-areas: "published-nav" "nav" "banner" "main" "content1" "content2" "content3" "published-footer" "footer";
