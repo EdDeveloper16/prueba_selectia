@@ -1,610 +1,544 @@
-/* BEGIN PUBLISHED NAV CONTENT*/
-/* END PUBLISHED NAV CONTENT*/
-/* BEGIN MENU */
-/* END MENU */
-/* BEGIN CARROUSEL */
-/* BANNER GENERATE WITH SWIPPER */
-/* SWIPPER SLIDER */
-/* END CARROUSEL */
-/* BEGIN IMAGES AND PARAGRAPHS*/
-/* END IMAGES AND PARAGRAPHS*/
-/* BEGIN SMOKE IMAGE*/
-/* END SMOKE IMAGE*/
-/* BEGIN CLIENT CONTENT*/
-/* END CLIENT CONTENT*/
-/* BEGIN FORM CONTENT*/
-/* END FORM CONTENT*/
-/* BEGIN PUBLISHED FOOTER CONTENT*/
-/* END PUBLISHED FOOTER CONTENT*/
-/* BEGIN FOOTER CONTENT*/
-/* END FOOTER CONTENT*/
+$color_1: white;
+$color_2: #e41129;
+$color_3: #001c3a;
+$font-family_1: 'Outfit';
+$border-color_1: white;
+
 body {
-  background: white;
-  font-family: "Outfit";
+	background: white;
+	font-family: $font-family_1;
 }
-
 #wrapper {
-  display: felx;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 4rem 4rem 50rem 85rem 70rem 30rem 30rem 4rem 25rem;
-  grid-template-areas: "published-nav" "nav" "banner" "main" "content1" "content2" "content3" "published-footer" "footer";
-  grid-gap: 0.5rem;
-  text-align: center;
+	display: felx;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 4rem 4rem 50rem 85rem 70rem 30rem 30rem 4rem 25rem;
+	grid-template-areas: "published-nav" "nav" "banner" "main" "content1" "content2" "content3" "published-footer" "footer";
+	grid-gap: .5rem;
+	text-align: center;
 }
-
 #published-nav {
-  background: #e41129;
-  color: white;
-  grid-area: published-nav;
-  line-height: 3.5em;
+	background: #e41129;
+	color: $color_1;
+	grid-area: published-nav;
+	line-height: 3.5em;
+	a {
+		color: $color_1;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
-#published-nav a {
-  color: white;
-  text-decoration: none;
-}
-#published-nav a:hover {
-  text-decoration: underline;
-}
-
 nav {
-  background: white;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-auto-rows: 3rem 5rem;
-  grid-template-areas: "logo" "menu";
-  grid-gap: 0.2rem;
-  grid-area: nav;
+	background: white;
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	grid-auto-rows: 3rem 5rem;
+	grid-template-areas: "logo" "menu";
+	grid-gap: .2rem;
+	grid-area: nav;
 }
-
 #logo {
-  background: white;
+	background: white;
+	img {
+		margin-top: 10px;
+		background: white;
+		width: 200px;
+	}
 }
-#logo img {
-  margin-top: 10px;
-  background: white;
-  width: 200px;
-}
-
 #menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2rem;
-  grid-template-areas: "list";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2rem;
+	grid-template-areas: "list";
 }
-
 #list {
-  grid-area: list;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "opt1" "opt2" "opt3" "opt4";
-  list-style: none;
-  grid-gap: 2rem;
-  padding-left: 10%;
-  padding-right: 10%;
+	grid-area: list;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "opt1" "opt2" "opt3" "opt4";
+	list-style: none;
+	grid-gap: 2rem;
+	padding-left: 10%;
+	padding-right: 10%;
 }
-
-.opts a:hover {
-  color: #e41129;
-  text-decoration: underline;
-  transition: 0.3;
-  opacity: 0.5;
+.opts {
+	a {
+		&:hover {
+			color: $color_2;
+			text-decoration: underline;
+			transition: .3;
+			opacity: 0.5;
+		}
+	}
 }
-
-#opt1 a {
-  color: #e41129;
-  text-decoration: none;
+#opt1 {
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
 }
-
-#opt2 a {
-  color: #e41129;
-  text-decoration: none;
+#opt2 {
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
 }
-
-#opt3 a {
-  color: #e41129;
-  text-decoration: none;
+#opt3 {
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
 }
-
-#opt4 a {
-  color: #e41129;
-  text-decoration: none;
+#opt4 {
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
 }
-
 #carrusel {
-  background: skyblue;
-  grid-area: banner;
+	background: skyblue;
+	grid-area: banner;
 }
-
 .banner {
-  width: 97%;
-  height: 900px;
-  background: #e41129;
+	width: 97%;
+	height: 900px;
+	background: #e41129;
 }
-
 swiper-container {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
-
 swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 main {
-  margin-top: 15%;
-  background: white;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-gap: 0.2rem;
-  grid-area: main;
+	margin-top: 15%;
+	background: white;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-gap: .2rem;
+	grid-area: main;
 }
-
 .card-image {
-  border-radius: 8px;
-  display: block;
-  width: 80%;
-  height: 50%;
-  margin-left: 10%;
+	border-radius: 8px;
+	display: block;
+	width: 80%;
+	height: 50%;
+	margin-left: 10%;
 }
-
 .card {
-  background: white;
-  color: #001c3a;
-  text-align: left;
+	background: white;
+	color: $color_3;
+	text-align: left;
 }
-
 .card-title {
-  display: block;
-  margin-left: 10%;
-  font-weight: 900;
+	display: block;
+	margin-left: 10%;
+	font-weight: 900;
 }
-
 .card-paragraph {
-  display: block;
-  font-size: 13px;
-  margin-left: 10%;
-  margin-right: 10%;
+	display: block;
+	font-size: 13px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
-
 #content1 {
-  margin-top: 20%;
-  background: #e41129;
-  grid-area: content1;
+	margin-top: 20%;
+	background: #e41129;
+	grid-area: content1;
 }
-
 .image-over-div {
-  width: 30%;
-  height: 700px;
-  display: block;
-  position: relative;
-  left: 35%;
-  top: -100px;
-  background-image: url("paragraph/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png");
-  background-size: 100% 100%;
+	width: 30%;
+	height: 700px;
+	display: block;
+	position: relative;
+	left: 35%;
+	top: -100px;
+	background-image: url('paragraph/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png');
+	background-size: 100% 100%;
 }
-
 .image-over-div-text {
-  display: grid;
-  text-align: center;
-  background: #001c3a;
-  position: relative;
-  top: 390px;
-  font-size: 30px;
-  color: white;
-  width: 100%;
-  opacity: 0.5;
+	display: grid;
+	text-align: center;
+	background: #001c3a;
+	position: relative;
+	top: 390px;
+	font-size: 30px;
+	color: $color_1;
+	width: 100%;
+	opacity: .5;
 }
-
 #content2 {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-auto-rows: 5rem 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-areas: "title-client title-client title-client title-client title-client title-client title-client" "card1 card2 card3 card4 card5 card6 card7" "card8 card8 card9 card9 card10 card11 card12";
-  background: #e41129;
-  grid-gap: 0.2rem;
-  grid-area: content2;
-  color: white;
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+	grid-auto-rows: 5rem 2fr 2fr 2fr 2fr 2fr 2fr;
+	grid-template-areas: "title-client title-client title-client title-client title-client title-client title-client" "card1 card2 card3 card4 card5 card6 card7" "card8 card8 card9 card9 card10 card11 card12";
+	background: #e41129;
+	grid-gap: .2rem;
+	grid-area: content2;
+	color: $color_1;
 }
-
 #title-client {
-  background: #e41129;
-  grid-area: title-client;
+	background: #e41129;
+	grid-area: title-client;
 }
-
 #card1 {
-  background: rgb(211, 40, 40);
-  grid-area: card1;
+	background: rgb(211, 40, 40);
+	grid-area: card1;
 }
-
 #card2 {
-  background: rgb(211, 40, 40);
-  grid-area: card2;
+	background: rgb(211, 40, 40);
+	grid-area: card2;
 }
-
 #card3 {
-  background: rgb(211, 40, 40);
-  grid-area: card3;
+	background: rgb(211, 40, 40);
+	grid-area: card3;
 }
-
 #card4 {
-  background: rgb(211, 40, 40);
-  grid-area: card4;
+	background: rgb(211, 40, 40);
+	grid-area: card4;
 }
-
 #card5 {
-  background: rgb(211, 40, 40);
-  grid-area: card5;
+	background: rgb(211, 40, 40);
+	grid-area: card5;
 }
-
 #card6 {
-  background: rgb(211, 40, 40);
-  grid-area: card6;
+	background: rgb(211, 40, 40);
+	grid-area: card6;
 }
-
 #card7 {
-  background: rgb(211, 40, 40);
-  grid-area: card7;
+	background: rgb(211, 40, 40);
+	grid-area: card7;
 }
-
 #card8 {
-  background: rgb(211, 40, 40);
-  grid-area: card8;
+	background: rgb(211, 40, 40);
+	grid-area: card8;
 }
-
 #card9 {
-  background: rgb(211, 40, 40);
-  grid-area: card9;
+	background: rgb(211, 40, 40);
+	grid-area: card9;
 }
-
 #card10 {
-  background: rgb(211, 40, 40);
-  grid-area: card10;
+	background: rgb(211, 40, 40);
+	grid-area: card10;
 }
-
 #card11 {
-  background: rgb(211, 40, 40);
-  grid-area: card11;
+	background: rgb(211, 40, 40);
+	grid-area: card11;
 }
-
 #card12 {
-  background: rgb(211, 40, 40);
-  grid-area: card12;
+	background: rgb(211, 40, 40);
+	grid-area: card12;
 }
-
 .client-card-image {
-  display: block;
-  width: 60%;
-  margin-top: 50px;
-  position: relative;
-  left: 45px;
-  transition: width 2s;
+	display: block;
+	width: 60%;
+	margin-top: 50px;
+	position: relative;
+	left: 45px;
+	transition: width 2s;
+	&:hover {
+		width: 500px;
+	}
 }
-.client-card-image:hover {
-  width: 500px;
-}
-
 #content3 {
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  grid-auto-rows: 30rem 30rem;
-  grid-template-areas: "form-1 form-2";
-  background: #e41129;
-  grid-gap: 0.2rem;
-  grid-area: content3;
+	display: grid;
+	grid-template-columns: 6fr 6fr;
+	grid-auto-rows: 30rem 30rem;
+	grid-template-areas: "form-1 form-2";
+	background: #e41129;
+	grid-gap: .2rem;
+	grid-area: content3;
 }
-
 #form-1 {
-  background: #e41129;
-  grid-area: form-1;
+	background: #e41129;
+	grid-area: form-1;
 }
-
 #form-2 {
-  background: #e41129;
-  grid-area: form-2;
+	background: #e41129;
+	grid-area: form-2;
 }
-
 .content-contact-form {
-  display: block;
-  background: #e41129;
-  height: 47vh;
-  padding-left: 10%;
-  padding-top: 5%;
-  text-align: justify;
+	display: block;
+	background: #e41129;
+	height: 47vh;
+	padding-left: 10%;
+	padding-top: 5%;
+	text-align: justify;
 }
-
 .form-paragraph {
-  color: white;
-  width: 82.5%;
-  font-size: 12px;
+	color: $color_1;
+	width: 82.5%;
+	font-size: 12px;
 }
-
 .conditions-patragraph {
-  display: block;
-  color: white;
-  width: 25%;
-  font-size: 10px;
-  margin-top: 80px;
-  float: left;
+	display: block;
+	color: $color_1;
+	width: 25%;
+	font-size: 10px;
+	margin-top: 80px;
+	float: left;
 }
-
 .form-title {
-  display: block;
-  width: 100%;
-  color: white;
-  text-align: left;
+	display: block;
+	width: 100%;
+	color: $color_1;
+	text-align: left;
 }
-
 .form-title-left {
-  display: block;
-  margin-top: 0%;
-  width: 100%;
-  color: white;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 100;
+	display: block;
+	margin-top: 0%;
+	width: 100%;
+	color: $color_1;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 100;
 }
-
 .form-control {
-  padding: 10px;
-  width: 40%;
-  border-radius: 5px;
-  border: none;
-  padding-top: 1px;
-  color: #e41129;
+	padding: 10px;
+	width: 40%;
+	border-radius: 5px;
+	border: none;
+	padding-top: 1px;
+	color: $color_2;
 }
-
 .form-control-left {
-  display: block;
-  padding: 10px;
-  width: 50%;
-  border-radius: 5px;
-  margin-top: 20px;
-  color: white;
-  background: #e41129;
-  border-color: white;
+	display: block;
+	padding: 10px;
+	width: 50%;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: $color_1;
+	background: #e41129;
+	border-color: $border-color_1;
 }
-
 .form-control-text-area {
-  padding: 10px;
-  width: 82.5%;
-  border-radius: 5px;
-  border: none;
-  margin-top: 7px;
-  color: #e41129;
-  height: 100px;
+	padding: 10px;
+	width: 82.5%;
+	border-radius: 5px;
+	border: none;
+	margin-top: 7px;
+	color: $color_2;
+	height: 100px;
 }
-
 .form-control-check {
-  width: 30px;
-  padding: 10px;
-  color: #e41129;
-  height: 30px;
-  display: block;
-  float: left;
-  border-radius: 10px;
-  border: none;
+	width: 30px;
+	padding: 10px;
+	color: $color_2;
+	height: 30px;
+	display: block;
+	float: left;
+	border-radius: 10px;
+	border: none;
 }
-
 .send-message {
-  background: #f8cc18;
-  color: #e41129;
-  border-radius: 20px;
-  width: 40%;
-  padding: 5px;
-  border: none;
-  float: left;
-  margin-top: 80px;
-  margin-left: 35px;
+	background: #f8cc18;
+	color: $color_2;
+	border-radius: 20px;
+	width: 40%;
+	padding: 5px;
+	border: none;
+	float: left;
+	margin-top: 80px;
+	margin-left: 35px;
 }
-
 .form-control-radio {
-  width: 40px;
-  padding: 10px;
-  color: #e41129;
-  height: 20px;
-  display: block;
-  float: left;
-  margin-top: 5px;
+	width: 40px;
+	padding: 10px;
+	color: $color_2;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-top: 5px;
 }
-
 #published-footer {
-  background: white;
-  grid-area: published-footer;
-  color: #e41129;
+	background: white;
+	grid-area: published-footer;
+	color: $color_2;
 }
-
 footer {
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
-  grid-auto-rows: 1fr 2fr 2fr 2fr;
-  grid-template-areas: "footer-1 footer-2 footer-3 footer-4";
-  background: #001c3a;
-  grid-gap: 0.2rem;
-  grid-area: footer;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr 3fr;
+	grid-auto-rows: 1fr 2fr 2fr 2fr;
+	grid-template-areas: "footer-1 footer-2 footer-3 footer-4";
+	background: #001c3a;
+	grid-gap: .2rem;
+	grid-area: footer;
 }
-
 #footer-1 {
-  background: #001c3a;
-  grid-area: footer-1;
+	background: #001c3a;
+	grid-area: footer-1;
 }
-
 #footer-2 {
-  background: #001c3a;
-  grid-area: footer-2;
+	background: #001c3a;
+	grid-area: footer-2;
 }
-
 #footer-3 {
-  background: #001c3a;
-  grid-area: footer-3;
+	background: #001c3a;
+	grid-area: footer-3;
 }
-
 #footer-4 {
-  background: #001c3a;
-  grid-area: footer-4;
+	background: #001c3a;
+	grid-area: footer-4;
 }
-
 .grid-payment {
-  display: flex;
-  padding-left: 30px;
+	display: flex;
+	padding-left: 30px;
 }
-
 .payment-image {
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding-left: 10px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding-left: 10px;
 }
-
-.section-footer h6 {
-  padding-left: 8%;
-  color: #e41129;
-  font-size: 12px;
-  font-weight: 100;
-  text-align: left;
+.section-footer {
+	h6 {
+		padding-left: 8%;
+		color: $color_2;
+		font-size: 12px;
+		font-weight: 100;
+		text-align: left;
+	}
+	ul {
+		list-style: none;
+		li {
+			display: block;
+			color: $color_2;
+			font-size: 12px;
+			font-weight: 100;
+			text-align: left;
+		}
+	}
 }
-.section-footer ul {
-  list-style: none;
-}
-.section-footer ul li {
-  display: block;
-  color: #e41129;
-  font-size: 12px;
-  font-weight: 100;
-  text-align: left;
-}
-
 .payment-title {
-  color: white;
-  font-weight: 100;
-  padding-left: 40px;
-  text-align: left;
+	color: $color_1;
+	font-weight: 100;
+	padding-left: 40px;
+	text-align: left;
 }
-
 .redes-title {
-  text-align: left;
-  color: #e41129;
-  font-weight: 100;
-  padding-left: 40px;
+	text-align: left;
+	color: $color_2;
+	font-weight: 100;
+	padding-left: 40px;
 }
-
 .enterprise-image {
-  display: block;
-  width: 150px;
-  height: 150px;
-  position: relative;
-  float: right;
-  padding: 10px;
+	display: block;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	float: right;
+	padding: 10px;
 }
-
 @media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 22rem 20rem 101rem 25rem 125rem 60rem 3rem 80rem;
-    grid-template-areas: "published-nav" "nav" "carrusel" "main" "content1" "content2" "content3" "published-footer" "footer";
-  }
-  .image-over-div {
-    width: 50%;
-    height: 300px;
-    display: block;
-    position: relative;
-    left: 25%;
-    top: -30px;
-    background-image: url("paragraph/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png");
-    background-size: 100% 100%;
-  }
-  .image-over-div-text {
-    display: grid;
-    text-align: center;
-    background: #001c3a;
-    position: relative;
-    top: 180px;
-    font-size: 12px;
-    color: white;
-    width: 100%;
-    opacity: 0.5;
-  }
-  #published-nav {
-    background: #e41129;
-    color: white;
-    grid-area: published-nav;
-    font-size: 12px;
-    line-height: 4em;
-  }
-  main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 25rem 25rem 25rem 25rem;
-  }
-  footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 20rem 20rem 20rem 20rem;
-    grid-template-areas: "footer-1" "footer-2" "footer-3" "footer-4";
-  }
-  #content2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 3rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
-    grid-template-areas: "title-client" "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9" "card10" "card11" "card12";
-    background: #e41129;
-    grid-gap: 0.2rem;
-    grid-area: content2;
-  }
-  #content3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 30rem 30rem;
-    grid-template-areas: "form-1" "form-2";
-    background: #e41129;
-    grid-gap: 0.2rem;
-    grid-area: content3;
-  }
-  nav {
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 8rem 3rem;
-    grid-template-areas: "logo" "menu";
-    grid-gap: 0.2rem;
-    grid-area: nav;
-  }
-  #list {
-    grid-area: list;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "opt1" "opt2" "opt3" "opt4";
-    list-style: none;
-    grid-gap: 2rem;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .client-card-image {
-    display: block;
-    width: 60%;
-    margin-top: 20px;
-    position: relative;
-    left: 20%;
-    transition: width 2s;
-  }
-  .client-card-image:hover {
-    width: 500px;
-  }
-  .form-control {
-    padding: 10px;
-    width: 38.5%;
-    border-radius: 5px;
-    border: none;
-    padding-top: 1px;
-    color: #e41129;
-  }
-}/*# sourceMappingURL=style.css.map */
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 3rem 22rem 20rem 101rem 25rem 125rem 60rem 3rem 80rem;
+		grid-template-areas: "published-nav" "nav" "carrusel" "main" "content1" "content2" "content3" "published-footer" "footer";
+	}
+	.image-over-div {
+		width: 50%;
+		height: 300px;
+		display: block;
+		position: relative;
+		left: 25%;
+		top: -30px;
+		background-image: url('paragraph/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png');
+		background-size: 100% 100%;
+	}
+	.image-over-div-text {
+		display: grid;
+		text-align: center;
+		background: #001c3a;
+		position: relative;
+		top: 180px;
+		font-size: 12px;
+		color: $color_1;
+		width: 100%;
+		opacity: .5;
+	}
+	#published-nav {
+		background: #e41129;
+		color: $color_1;
+		grid-area: published-nav;
+		font-size: 12px;
+		line-height: 4em;
+	}
+	main {
+		grid-template-columns: 1fr;
+		grid-template-rows: 25rem 25rem 25rem 25rem;
+	}
+	footer {
+		grid-template-columns: 1fr;
+		grid-template-rows: 20rem 20rem 20rem 20rem;
+		grid-template-areas: "footer-1" "footer-2" "footer-3" "footer-4";
+	}
+	#content2 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 3rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+		grid-template-areas: "title-client" "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9" "card10" "card11" "card12";
+		background: #e41129;
+		grid-gap: .2rem;
+		grid-area: content2;
+	}
+	#content3 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 30rem 30rem;
+		grid-template-areas: "form-1" "form-2";
+		background: #e41129;
+		grid-gap: .2rem;
+		grid-area: content3;
+	}
+	nav {
+		background: white;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: 8rem 3rem;
+		grid-template-areas: "logo" "menu";
+		grid-gap: .2rem;
+		grid-area: nav;
+	}
+	#list {
+		grid-area: list;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "opt1" "opt2" "opt3" "opt4";
+		list-style: none;
+		grid-gap: 2rem;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.client-card-image {
+		display: block;
+		width: 60%;
+		margin-top: 20px;
+		position: relative;
+		left: 20%;
+		transition: width 2s;
+		&:hover {
+			width: 500px;
+		}
+	}
+	.form-control {
+		padding: 10px;
+		width: 38.5%;
+		border-radius: 5px;
+		border: none;
+		padding-top: 1px;
+		color: $color_2;
+	}
+}
